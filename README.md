@@ -1,4 +1,4 @@
-# 🧠 Local Chat con Qwen3 + MCP + Chainlit
+# 🧠 Local Chat con Qwen3 + Chainlit
 
 **Local Chat** es un asistente conversacional basado en LLMs que funciona completamente en local, capaz de listar, leer, buscar y resumir archivos desde tu sistema de archivos, usando un modelo de lenguaje como `Qwen3:8b` (Ollama) y el servidor de archivos `MCP`.
 
@@ -31,13 +31,7 @@ source venv/bin/activate # macOS/Linux
 ollama run qwen3:8b
 ```
 
-### 4. Lanza el servidor de archivos MCP en la ruta deseada
-
-```bash
-npx @modelcontextprotocol/server-filesystem D:/PERSONAL/YURI/X-DI
-```
-
-### 5. Ejecuta la app Chainlit
+### 4. Ejecuta la app Chainlit
 
 ```bash
 chainlit run chainlit_app.py --port 8000
@@ -64,7 +58,6 @@ El modelo local utilizado es:
 * [Chainlit](https://docs.chainlit.io/) — interfaz de chat local.
 * [LangChain](https://www.langchain.com/) — agente y herramientas.
 * [Ollama](https://ollama.com) — ejecución local de LLMs.
-* [Model Context Protocol](https://modelcontextprotocol.io) — acceso a archivos locales.
 * Python: `pdfplumber`, `python-docx`, `pandas`, `openpyxl`.
 
 ---
