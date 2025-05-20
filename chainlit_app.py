@@ -1,21 +1,24 @@
 # chainlit_app.py
 
 import chainlit as cl
-from app.agent import agent
+import asyncio
+from agent import get_agent
 
-@cl.on_chat_start
-async def on_chat_start():
-    await cl.Message(
-        content="👋 ¡Bienvenido! Soy tu asistente IA local. Puedes preguntarme sobre archivos o carpetas de tu directorio compartido. "
-                "Por ejemplo: 'Lista los archivos en E:/proyectos/2024' o 'Ábreme el archivo memoria.txt'."
-    ).send()
+# Inicializa el agente una sola vez
+agent = get_agent()
 
 @cl.on_message
-async def on_message(message: cl.Message):
-    prompt = message.content
-    # LangChain agents NO son asíncronos, así que usamos run() y no await/acall.
+async def main(message: cl.Message):
+    user_input = message.content
+
+    # Muestra un mensaje de "procesando..."
+    await cl.Message(content="🤖 Estoy procesando tu solicitud...").send()
+
     try:
-        response = agent.run(prompt)
-        await cl.Message(content=str(response)).send()
+        # Usa .run() para obtener directamente el texto en lenguaje natural
+        raw = await asyncio.to_thread(agent.run, user_input)
     except Exception as e:
-        await cl.Message(content=f"⚠️ Error: {e}").send()
+        raw = f"❌ Ocurrió un error interno:\n{e}"
+
+    # Envía la respuesta como texto plano (Chainlit aplicará saltos de línea y viñetas)
+    await cl.Message(content=raw).send()

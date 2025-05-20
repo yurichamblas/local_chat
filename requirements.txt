@@ -1,6 +1,10 @@
-chainlit
-langchain
-langchain-community
-requests
-langchain-ollama-0.3.3 ollama-0.4.8
-mcp-proxy-0.6.0
+chainlit>=1.0.100
+langchain>=0.1.17
+pdfplumber>=0.10
+python-docx>=0.8
+pandas>=2.0
+openpyxl>=3.1
+# LLM local
+langchain-ollama>=0.0.10
+# Opcional (para Excel/CSV robusto)
+xlrd>=2.0

@@ -7,8 +7,8 @@ OLLAMA_URL = "http://localhost:11434"
 # Dirección del servidor MCP filesystem
 MCP_URL = "http://localhost:3333"
 
-# Carpeta raíz expuesta por el MCP (puedes cambiarla después)
-BASE_PATH = "D:\PERSONAL\YURI\X-DI"
+# Carpeta raíz expuesta.
+BASE_PATH = r"D:/PERSONAL/YURI/X-DI"
 
 # Otros parámetros opcionales:
 LANGUAGE = "es"  # "es" para español, puedes cambiar si usas otro idioma
