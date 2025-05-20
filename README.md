@@ -1,6 +1,6 @@
 # 🧠 Local Chat con Qwen3 + Chainlit
 
-**Local Chat** es un asistente conversacional basado en LLMs que funciona completamente en local, capaz de listar, leer, buscar y resumir archivos desde tu sistema de archivos, usando un modelo de lenguaje como `Qwen3:8b` (Ollama) y el servidor de archivos `MCP`.
+**Local Chat** es un asistente conversacional basado en LLMs que funciona completamente en local, capaz de listar, leer, buscar y resumir archivos desde tu sistema de archivos, usando un modelo de lenguaje como `Qwen3:8b` (Ollama).
 
 ## ✨ Funcionalidades principales
 
