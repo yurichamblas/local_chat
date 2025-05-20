@@ -1,0 +1,6 @@
+chainlit
+langchain
+langchain-community
+requests
+langchain-ollama-0.3.3 ollama-0.4.8
+mcp-proxy-0.6.0
