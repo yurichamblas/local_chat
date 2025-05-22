@@ -1,14 +1,20 @@
-# Welcome to Chainlit! 🚀🤖
+## 🧠 Local Chat con Qwen3 y acceso local 🔍📂
 
-Hi there, Developer! 👋 We're excited to have you on board. Chainlit is a powerful tool designed to help you prototype, debug and share applications built on top of LLMs.
+¡Bienvenido a tu asistente local con capacidades LLM! Este entorno usa **Chainlit** como interfaz conversacional y un modelo **Qwen3:8b** ejecutado localmente mediante **Ollama**, con soporte para explorar y procesar archivos directamente desde tu sistema.
 
-## Useful Links 🔗
+### 🚀 ¿Qué puede hacer Local Chat?
 
-- **Documentation:** Get started with our comprehensive [Chainlit Documentation](https://docs.chainlit.io) 📚
-- **Discord Community:** Join our friendly [Chainlit Discord](https://discord.gg/k73SQ3FyUh) to ask questions, share your projects, and connect with other developers! 💬
+- 📁 **Listar carpetas**: Muestra el contenido de directorios locales permitidos.
+- 📄 **Leer archivos**: Visualiza archivos `.txt`, `.md`, `.py`, `.json`, `.pdf`, `.docx`, `.xlsx` y más.
+- 🔎 **Buscar texto**: Busca una palabra o frase dentro de múltiples archivos en una carpeta.
+- 📝 **Resumir documentos**: Usa LLMs para generar resúmenes breves de archivos individuales o carpetas completas.
 
-We can't wait to see what you create with Chainlit! Happy coding! 💻😊
+### 🛠️ Tecnologías utilizadas
 
-## Welcome screen
+- 🧠 **Modelo:** `qwen3:8b` (Ollama)
+- 💬 **Interfaz:** `Chainlit`
+- 🧰 **Frameworks:** `LangChain`, `LangChain-Ollama`
+- 🗂️ **Exploración local:** Integración segura y restringida con el sistema de archivos
 
-To modify the welcome screen, edit the `chainlit.md` file at the root of your project. If you do not want a welcome screen, just leave this file empty.
+
+¡Explora tus datos con IA local, sin depender de la nube! ☁️❌  
