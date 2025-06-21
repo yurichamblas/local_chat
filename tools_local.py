@@ -9,9 +9,9 @@ import pandas as pd
 import config  # usa BASE_PATH desde config.py
 
 # Carpetas raíz permitidas
+# Puedes añadir más rutas a esta lista si lo necesitas.
 BASE_DIRS = [
     Path(config.BASE_PATH).resolve(),
-    Path(r"E:/Local_Chat").resolve()
 ]
 
 # ---------- utilidades internas ---------- #

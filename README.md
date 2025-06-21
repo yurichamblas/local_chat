@@ -37,15 +37,13 @@ ollama run qwen3:8b
 chainlit run chainlit_app.py --port 8000
 ```
 
-> Puedes editar la ruta base y configuración en `config.py`.
+> Puedes editar la ruta base y otros parámetros en `config.py`.
 
 ## 📁 Carpeta base usada
 
-Por defecto, Local Chat accede a:
-
-```
-D:/PERSONAL/YURI/X-DI
-```
+La aplicación opera únicamente sobre el directorio definido en `config.py` a
+través de la variable `BASE_PATH`. Modifícalo según la ruta que prefieras
+antes de iniciar la app.
 
 ## 🧠 Modelo LLM usado
 
