@@ -8,7 +8,7 @@ OLLAMA_URL = "http://localhost:11434"
 MCP_URL = "http://localhost:3333"
 
 # Carpeta raíz expuesta.
-BASE_PATH = r"yourpathhere"
+BASE_PATH = r"D:/PERSONAL/YURI"
 
 # Otros parámetros opcionales:
 LANGUAGE = "es"  # "es" para español, puedes cambiar si usas otro idioma
